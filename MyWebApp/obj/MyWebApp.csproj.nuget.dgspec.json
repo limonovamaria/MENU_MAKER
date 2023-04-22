@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Satan\\MyWebApp\\MyWebApp.csproj": {}
+    "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\MyWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Satan\\MyWebApp\\MyWebApp.csproj": {
+    "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\MyWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Satan\\MyWebApp\\MyWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\MyWebApp.csproj",
         "projectName": "MyWebApp",
-        "projectPath": "C:\\Users\\Satan\\MyWebApp\\MyWebApp.csproj",
-        "packagesPath": "C:\\Users\\Satan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Satan\\MyWebApp\\obj\\",
+        "projectPath": "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\MyWebApp.csproj",
+        "packagesPath": "C:\\Users\\Marus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Satan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Marus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
