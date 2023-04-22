@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "NHrecu1mgYHfI0O1ZoQlXMVLelJf5yP+yflDLPUJcoqgUU2u3zYlDv7sjQdnqs+0MwX4qiiyMcG3iYEaqgfRvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Satan\\Desktop\\GIT\\PP\\MyWebApp\\MyWebApp.csproj",
-=======
-  "dgSpecHash": "XFdqIxi91/JvQUH2/PWgt7gWqHZaA7Xg+EZ+U5WSiHJf0FEssSm2c36jsW/D3zvztwziaOojYWsW9ix9ehLsFQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\MyWebApp.csproj",
->>>>>>> master
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша C:\\Users\\Satan\\Desktop\\GIT\\PP\\MyWebApp\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

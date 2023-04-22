@@ -17,7 +17,7 @@ namespace MenuMaker
             Weight = weight;
             category = c;
         }
-        
+
     }
-    public enum Category { isfruit,isvegetable}
+    public enum Category { isfruit, isvegetable }
 }
