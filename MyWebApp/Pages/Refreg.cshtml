@@ -116,21 +116,6 @@
         <div>
             <h4>Название продукта</h4>
             <input />
-            <h4>Количество калорий</h4>
-            <input />
-            <div>
-                <h4>Категория</h4>
-                <select size="4">
-                    <option>Крупы</option>
-                    <option>Фрукты</option>
-                    <option>Хлеб и хлебцы</option>
-                    <option>Овощи</option>
-                    <option>Гарниры</option>
-                    <option>Мясо или рыба</option>
-                    <option>Орехи</option>
-                    <option>Молочные продукты</option>
-                </select>
-            </div>
             <button type ="button" onclick="addProdToDoList()">Добавить</button>
         </div>
         <div>
@@ -140,7 +125,7 @@
                     
                 </select>
             </div>
-            <button>Удалить содержимое холодильника</button>
+            <button onclick="removeAll()">Удалить содержимое холодильника</button>
         </div>
     </div>
 </div>
@@ -153,17 +138,6 @@
     </form>
 </footer>
 
-<h1>Список дел:</h1>
-<form id="checklist-form">
-    <ul>
-        <li><input type="checkbox" id="item1" name="item1" value="Покормить кошку">Покормить кошку</li>
-        <li><input type="checkbox" id="item2" name="item2" value="Вынести мусор">Вынести мусор</li>
-        <li><input type="checkbox" id="item3" name="item3" value="Сходить в магазин">Сходить в магазин</li>
-        <li><input type="checkbox" id="item4" name="item4" value="Постирать белье">Постирать белье</li>
-    </ul>
-    <button type="button" onclick="addToDoList()">Добавить в список</button>
-</form>
-
 <script>
     function addToDoList() {
         var checkBoxes = document.querySelectorAll('input[type="checkbox"]:checked'); // Получаем все выбранные checkbox
@@ -174,5 +148,9 @@
             listItem.innerText = checkBoxes[i].value; // Добавляем в пункт текст выбранного пункта из checkbox
             toDoList.appendChild(listItem); // Добавляем пункт в список дел
         }
+    }
+    function removeAll() {
+        var myList = document.getElementById("to-do-list");
+        myList.innerHTML = "";
     }
 </script>
