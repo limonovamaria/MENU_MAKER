@@ -5,25 +5,27 @@
 }
 
 <h1 style="text-align:center">Заполните анкету</h1>
+<form action="Refreg">
 <div class="FormPage">
-    <div class="first_column_form">
-        <div>
-            <h4>Укажите пол</h4>
-            <p><input type="radio" name="sex"> Мужской</p>
-            <p><input type="radio" name="sex"> Женский</p>
-        </div>
-        <div>
-            <h4>Укажите возраст</h4>
-            <input id="date" maxlength="2" type="text" pattern="[0-9]*" required>
-        </div>
-        <div>
-            <h4>Укажите рост</h4>
-            <input class="high" value="170" required />
-        </div>
-        <div>
-            <h4>Укажите вес</h4>
-            <input class="weight" value="60" required />
-        </div>
+    <div class="first_column_form" required>
+            <div>
+                <h4>Укажите пол</h4>
+                <p><input type="radio" name="sex" required> Мужской</p>
+                <p><input type="radio" name="sex" required> Женский</p>
+            </div>
+            <div>
+                <h4>Укажите возраст</h4>
+                <input id="date" maxlength="2" required type="text" pattern="[0-9]*">
+            </div>
+            <div>
+                <h4>Укажите рост</h4>
+                <input class="high" value="170" required />
+            </div>
+            <div>
+                <h4>Укажите вес</h4>
+                <input class="weight" value="60" required />
+            </div>
+        
     </div>
     <div class="second_column_form">
         <div>
@@ -42,9 +44,9 @@
                 <option>Набор мышечной массы</option>
             </select>
         </div>
-        <form action="GenerCalories">
-            <button class="btn_after_form">Далее</button>
-        </form>
         
+            <button class="btn_after_form">Далее</button>
+            
     </div>
 </div>
+</form>
