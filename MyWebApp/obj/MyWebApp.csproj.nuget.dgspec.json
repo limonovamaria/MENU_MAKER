@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Satan\\MyWebApp\\MyWebApp.csproj": {}
+    "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\MyWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Satan\\MyWebApp\\MyWebApp.csproj": {
+    "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\MyWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Satan\\MyWebApp\\MyWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\MyWebApp.csproj",
         "projectName": "MyWebApp",
-        "projectPath": "C:\\Users\\Satan\\MyWebApp\\MyWebApp.csproj",
+        "projectPath": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\MyWebApp.csproj",
         "packagesPath": "C:\\Users\\Satan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Satan\\MyWebApp\\obj\\",
+        "outputPath": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
