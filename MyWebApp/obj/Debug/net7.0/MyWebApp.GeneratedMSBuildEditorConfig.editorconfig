@@ -16,16 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Satan\MyWebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Satan/MyWebApp/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+[C:/Users/Satan/MyWebApp/Pages/Auto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Satan/MyWebApp/Pages/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Satan/MyWebApp/Pages/GenerCalories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJDYWxvcmllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Satan/MyWebApp/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Satan/MyWebApp/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+[C:/Users/Satan/MyWebApp/Pages/Refreg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVmcmVnLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Satan/MyWebApp/Pages/Reg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Satan/MyWebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]

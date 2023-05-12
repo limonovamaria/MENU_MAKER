@@ -1,0 +1,47 @@
+﻿@page
+@model MyWebApp.Pages.FormModel
+@{
+    ViewData["Title"] = "Генератор";
+}
+
+<h1 style="text-align:center">Заполните анкету</h1>
+<div class="FormPage">
+    <div class="first_column_form">
+        <div>
+            <h4>Укажите пол</h4>
+            <p><input type="radio" name="sex"> Мужской</p>
+            <p><input type="radio" name="sex"> Женский</p>
+        </div>
+        <div>
+            <h4>Укажите возраст</h4>
+            <input id="date" maxlength="2" type="text" pattern="[0-9]*" required>
+        </div>
+        <div>
+            <h4>Укажите рост</h4>
+            <input class="high" value="170" required />
+        </div>
+        <div>
+            <h4>Укажите вес</h4>
+            <input class="weight" value="60" required />
+        </div>
+    </div>
+    <div class="second_column_form">
+        <div>
+            <h4>Укажите уровень активности</h4>
+            <select size="3">
+                <option>Низкий</option>
+                <option selected>Средний</option>
+                <option>Высокий</option>
+            </select>
+        </div>
+        <div>
+            <h4>Выберите режим</h4>
+            <select size="3">
+                <option>Сброс веса</option>
+                <option selected>Поддержание веса</option>
+                <option>Набор мышечной массы</option>
+            </select>
+        </div>
+        <button class="btn_after_form">Далее</button>
+    </div>
+</div>

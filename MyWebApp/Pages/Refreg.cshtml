@@ -1,0 +1,151 @@
+﻿@page
+@model MyWebApp.Pages.RefregModel
+@{
+}
+<h1 style="text-align:center">Добавьте продукты, которые есть у вас в холодильнике</h1>
+<h4 style="text-align:center">Выберите из предложенных продуктов (желательно хотя бы по одному продукту из каждой категории)</h4>
+<h6 style="text-align:center">Наведите на категорию</h6>
+<div class="Refreg_menu">
+    <div class="Refreg_menu_first">
+        <div class="Ref_select">
+            <div class="dropdown-checkbox form-group">
+                <h4 class="label_title">Крупы</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="type[]">Овсяные хлопья</label></li>
+                    <li><label><input type="checkbox" name="type[]">Овсянка</label></li>
+                    <li><label><input type="checkbox" name="type[]">Пшенка</label></li>
+                    <li><label><input type="checkbox" name="type[]">Гречка</label></li>
+                    <li><label><input type="checkbox" name="type[]">Рис</label></li>
+                    <li><label><input type="checkbox" name="type[]">Рисовые хлопья</label></li>
+                    <li><label><input type="checkbox" name="type[]">Манка</label></li>
+                    <li><label><input type="checkbox" name="type[]">Перловка</label></li>
+                    <li><label><input type="checkbox" name="type[]">Геркулес</label></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-checkbox form-group">
+                <h4 class="label_title">Фрукты</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="type[]">Яблоко</label></li>
+                    <li><label><input type="checkbox" name="type[]">Банан</label></li>
+                    <li><label><input type="checkbox" name="type[]">Апельсин</label></li>
+                    <li><label><input type="checkbox" name="type[]">Груша</label></li>
+                    <li><label><input type="checkbox" name="type[]">Киви</label></li>
+                    <li><label><input type="checkbox" name="type[]">Мандарин</label></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-checkbox form-group">
+                <h4 class="label_title">Овощи</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="type[]">Помидор</label></li>
+                    <li><label><input type="checkbox" name="type[]">Огурец</label></li>
+                    <li><label><input type="checkbox" name="type[]">Лук репчатый</label></li>
+                    <li><label><input type="checkbox" name="type[]">Перец</label></li>
+                    <li><label><input type="checkbox" name="type[]">Морковь</label></li>
+                    <li><label><input type="checkbox" name="type[]">Капуста</label></li>
+                    <li><label><input type="checkbox" name="type[]">Кабачок</label></li>
+                    <li><label><input type="checkbox" name="type[]">Цветная капуста</label></li>
+                    <li><label><input type="checkbox" name="type[]">Чеснок</label></li>
+                    <li><label><input type="checkbox" name="type[]">Свекла</label></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-checkbox form-group">
+                <h4 class="label_title">Орехи</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="type[]">Грецкий орех</label></li>
+                    <li><label><input type="checkbox" name="type[]">Фундук</label></li>
+                    <li><label><input type="checkbox" name="type[]">Кешью</label></li>
+                    <li><label><input type="checkbox" name="type[]">Арахис</label></li>
+                    <li><label><input type="checkbox" name="type[]">Фисташки</label></li>
+                    <li><label><input type="checkbox" name="type[]">Миндаль</label></li>
+                </ul>
+            </div>
+            <div class="dropdown-checkbox form-group">
+                <h4 class="label_title">Хлеб и хлебцы</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="type[]">Хлеб пшеничный</label></li>
+                    <li><label><input type="checkbox" name="type[]">Хлеб ржаной</label></li>
+                    <li><label><input type="checkbox" name="type[]">Хлеб гречневый</label></li>
+                    <li><label><input type="checkbox" name="type[]">Хлеб зерновой</label></li>
+                    <li><label><input type="checkbox" name="type[]">Хлеб отрубной</label></li>
+                    <li><label><input type="checkbox" name="type[]">Хлеб бездрожжевой</label></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-checkbox form-group">
+                <h4 class="label_title">Гарниры</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="type[]">Картофель</label></li>
+                    <li><label><input type="checkbox" name="type[]">Макароны</label></li>
+                    <li><label><input type="checkbox" name="type[]">Булгур</label></li>
+                    <li><label><input type="checkbox" name="type[]">Горох</label></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-checkbox form-group">
+                <h4 class="label_title">Мясо или рыба</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="type[]">Курица</label></li>
+                    <li><label><input type="checkbox" name="type[]">Рыба</label></li>
+                    <li><label><input type="checkbox" name="type[]">Говядина</label></li>
+                    <li><label><input type="checkbox" name="type[]">Свинина</label></li>
+                    <li><label><input type="checkbox" name="type[]">Баранина</label></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-checkbox form-group">
+                <h4 class="label_title">Молочные продукты</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="type[]">Творог</label></li>
+                    <li><label><input type="checkbox" name="type[]">Йогурт</label></li>
+                    <li><label><input type="checkbox" name="type[]">Кефир</label></li>
+                    <li><label><input type="checkbox" name="type[]">Ряженка</label></li>
+                </ul>
+            </div>
+            
+        </div>
+        <button class="but_add_prod">Добавить в холодильник</button>
+        
+    </div>
+    <hr />
+    <h4>Добавьте свои продукты</h4>
+    <hr />
+    <div class="Refreg_menu_sec">
+        <div>
+            <h4>Название продукта</h4>
+            <input />
+            <h4>Количество калорий</h4>
+            <input />
+            <div>
+                <h4>Категория</h4>
+                <select size="4">
+                    <option>Крупы</option>
+                    <option>Фрукты</option>
+                    <option>Хлеб и хлебцы</option>
+                    <option>Овощи</option>
+                    <option>Гарниры</option>
+                    <option>Мясо или рыба</option>
+                    <option>Орехи</option>
+                    <option>Молочные продукты</option>
+                </select>
+            </div>
+            <button>Добавить</button>
+
+        </div>
+        <div>
+            <h4>Мой холодильник</h4>
+            <div class="Refreg_menu_second">
+                <select size="5" style="width:200px; height:300px">
+                    <option></option>
+                </select>
+            </div>
+            <button>Удалить содержимое холодильника</button>
+        </div>
+    </div>
+</div>
+<footer class="foot_refreg">
+    <button>Назад</button>
+    <button>Далее</button>
+</footer>
