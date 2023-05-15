@@ -22,7 +22,7 @@ body {
 }
 
 .buttons_reg_auto {
-    height: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,27 +83,27 @@ body {
         margin: 20px;
     }
 
-    .FormPage button{
-        margin:40px;
+    .FormPage button {
+        margin: 40px;
     }
 
 .Ref_select {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
     .Ref_select div {
         margin: 10px;
     }
 
-.Refreg_menu_sec{
-    display:flex;
+.Refreg_menu_sec {
+    display: flex;
 }
 
-.Refreg_menu_sec div:nth-child(2){
-    flex-direction:column;
-    padding-left:25px;
-}
+    .Refreg_menu_sec div:nth-child(2) {
+        flex-direction: column;
+        padding-left: 25px;
+    }
 
 
 
@@ -114,9 +114,9 @@ body {
     padding: 10px;
 }
 
-.dropdown-checkbox:hover{
-    background-color:bisque;
-}
+    .dropdown-checkbox:hover {
+        background-color: bisque;
+    }
 
     .dropdown-checkbox .label-title {
         font-size: 13px;
@@ -150,23 +150,45 @@ body {
         display: block;
     }
 
-.foot_refreg button:nth-child(2){
-    float:right;
+.foot_refreg button:nth-child(2) {
+    float: right;
 }
 
-.gener_calor{
-    display:inline-flex;
-    justify-content:center;
-}
-.gener_calor div {
-    padding:25px;
 
+.gener_col_first {
+    display: flex;
+    flex-direction: column;
 }
-.gener_col_first{
-    display:flex;
-    flex-direction:column;   
-}
+
 .gener_col_sec {
     display: flex;
     flex-direction: column;
+}
+
+.gener_calor {
+    display:flex;
+    justify-content:center;
+}
+#myTable{
+    font-size:22px;
+}
+th {
+    font-weight: normal;
+    color: #039;
+    padding: 10px 15px;
+    text-align:center;
+}
+
+td {
+    color: #669;
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+}
+td input{
+    border:none;
+    text-align:center;
+}
+
+tr:hover td {
+    background: #e8edff;
 }

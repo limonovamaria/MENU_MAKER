@@ -14,14 +14,16 @@
             </tr>
         </thead>
         <tbody>
-            
         </tbody>
     </table>
 </div>
-<form action="Refreg">
-    <button>Назад</button>
-</form>
-<button onclick="addInput()">Далее</button>
+<div class="buttons_reg_auto">
+    <form action="Refreg">
+        <button>Назад</button>
+    </form>
+    <button onclick="addInput()">Далее</button>
+</div>
+
 
 <script>
     var data = JSON.parse(localStorage.getItem('listValues'));
@@ -31,7 +33,7 @@
 
     Object.entries(data).forEach((entry) => {
         // создаем строку таблицы
-        const [key,value]=entry;
+        const [key, value] = entry;
         const row = document.createElement('tr');
 
         // создаем ячейки и добавляем текст внутрь
