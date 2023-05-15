@@ -7,6 +7,7 @@ namespace MyWebApp.Pages
     {
         public void OnGet()
         {
+
         }
     }
 }

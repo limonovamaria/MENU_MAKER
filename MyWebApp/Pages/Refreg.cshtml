@@ -133,7 +133,7 @@
         <button>Назад</button>
     </form>
     <form action="GenerCalories">
-        <button>Далее</button>
+        <button onclick="addToListNext()">Далее</button>
     </form>
 </footer>
 
@@ -160,4 +160,22 @@
         var myList = document.getElementById("to-do-list");
         myList.innerHTML = "";
     }
+
+    function addToListNext() {
+        // Получаем список
+        const list = document.getElementById('to-do-list');
+
+        // Получаем элементы списка
+        const items = list.querySelectorAll('option');
+
+        // Создаем массив со значениями элементов списка
+        const values = [];
+        for (let i = 0; i < items.length; i++) {
+            values.push(items[i].innerText);
+        }
+
+        // Сохраняем массив в localStorage
+        localStorage.setItem('listValues', JSON.stringify(values));
+    }
+
 </script>

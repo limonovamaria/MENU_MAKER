@@ -7,10 +7,9 @@
 <div class="gener_calor">
     <div class="gener_col_first">
         <h3>Мой холодильник</h3>
-        <select size="5" style="width:200px; height:300px">
-            <option></option>
+        <select id="targetList" size="5" style="width:200px; height:300px">
         </select>
-        <button>Открыть холодильник</button>
+        <button onclick="addPredToList()">Открыть холодильник</button>
     </div>
     <div class="gener_col_sec">
         <h3>Количество грамм</h3>
@@ -35,10 +34,26 @@
         <select size="5" style="width:200px; height:300px">
             <option></option>
         </select>
-        
+
     </div>
 </div>
 <form action="Refreg">
     <button>Назад</button>
 </form>
 <button>Далее</button>
+<script>
+    function addPredToList() {
+        // Получаем список
+        const targetList = document.getElementById('targetList');
+
+        // Получаем значения из localStorage и парсим их
+        const values = JSON.parse(localStorage.getItem('listValues'));
+
+        // Создаем новые элементы списка на основе полученных значений и добавляем их в целевой список
+        values.forEach(value => {
+            const newItem = document.createElement('option');
+            newItem.innerText = value;
+            targetList.appendChild(newItem);
+        });
+    }
+</script>
