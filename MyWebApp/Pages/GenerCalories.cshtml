@@ -3,57 +3,53 @@
 @{
     ViewData["Title"] = "Генератор";
 }
+
 <h1 style="text-align:center">Укажите количество грамм каждого продукта</h1>
 <div class="gener_calor">
-    <div class="gener_col_first">
-        <h3>Мой холодильник</h3>
-        <select id="targetList" size="5" style="width:200px; height:300px">
-        </select>
-        <button onclick="addPredToList()">Открыть холодильник</button>
-    </div>
-    <div class="gener_col_sec">
-        <h3>Количество грамм</h3>
-        <select size="4">
-            <option>10</option>
-            <option>25</option>
-            <option>50</option>
-            <option>75</option>
-            <option>100</option>
-            <option>125</option>
-            <option>150</option>
-            <option>175</option>
-            <option>200</option>
-        </select>
-        <button>Добавить</button>
-        <h3>Другие граммы</h3>
-        <input />
-        <button>Добавить</button>
-    </div>
-    <div class="gener_col_third">
-        <h3>Мой холодильник</h3>
-        <select size="5" style="width:200px; height:300px">
-            <option></option>
-        </select>
-
-    </div>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Название продукта</th>
+                <th>Количество грамм</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
 </div>
 <form action="Refreg">
     <button>Назад</button>
 </form>
-<button>Далее</button>
+<button onclick="addInput()">Далее</button>
+
 <script>
-    function addPredToList() {
-        // Получаем список
-        const targetList = document.getElementById('targetList');
+    var data = JSON.parse(localStorage.getItem('listValues'));
 
-        // Получаем значения из localStorage и парсим их
-        const values = JSON.parse(localStorage.getItem('listValues'));
+    const table = document.getElementById('myTable');
+    const tbody = table.querySelector('tbody');
 
-        // Создаем новые элементы списка на основе полученных значений и добавляем их в целевой список
-        values.forEach(value => {
-            const newItem = document.createElement('option');
-            newItem.innerText = value;
-            targetList.appendChild(newItem);
-        });
-    }
+    Object.entries(data).forEach((entry) => {
+        // создаем строку таблицы
+        const [key,value]=entry;
+        const row = document.createElement('tr');
+
+        // создаем ячейки и добавляем текст внутрь
+        const nameCell = document.createElement('td');
+        nameCell.textContent = value;
+        const quantityCell = document.createElement('td');
+
+        // создаем input и добавляем значение 300
+        const quantityInput = document.createElement('input');
+        quantityInput.type = 'number';
+        quantityInput.value = 300;
+
+        // добавляем input в ячейку и ячейки в строку
+        quantityCell.appendChild(quantityInput);
+        row.appendChild(nameCell);
+        row.appendChild(quantityCell);
+
+        // добавляем строку в таблицу
+        tbody.appendChild(row);
+    });
 </script>

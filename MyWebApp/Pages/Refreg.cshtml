@@ -122,6 +122,7 @@
             <h4>Мой холодильник</h4>
             <div class="Refreg_menu_second">
                 <select id="to-do-list" size="5" style="width:200px; height:300px">
+
                 </select>
             </div>
             <button onclick="removeAll()">Удалить содержимое холодильника</button>
@@ -172,6 +173,7 @@
         const values = [];
         for (let i = 0; i < items.length; i++) {
             values.push(items[i].innerText);
+            
         }
 
         // Сохраняем массив в localStorage
