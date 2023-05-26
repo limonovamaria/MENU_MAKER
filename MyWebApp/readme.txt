@@ -2,7 +2,7 @@
 Инструкция по ссылке: https://learn.microsoft.com/ru-ru/dotnet/core/install/windows?tabs=net70
 ----------------------------------
 Запуск приложения:
-1. Просмотр кода страниц RazorPage - открывать через Visual Studio (желательно v.22)
+1. Просмотр кода страниц RazorPage - открывать через Visual Studio MyWebApp.sln (желательно v.22)
 	1.1. Структура проекта:
 		1.1.1. wwwroot - содержит вспомогательные файлы, такие как css, js и веб-библиотеки
 		1.1.2. Pages - содержит RazorPage - страницы, в которых находится HTML - код страниц формата cshtml
