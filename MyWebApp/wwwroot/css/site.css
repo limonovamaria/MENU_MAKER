@@ -19,6 +19,8 @@ html {
 
 body {
     margin-bottom: 60px;
+    background-image: url('../image/main_bg.png');
+    background-size: cover;
 }
 
 .buttons_reg_auto {
@@ -166,17 +168,19 @@ body {
 }
 
 .gener_calor {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
-#myTable{
-    font-size:22px;
+
+#myTable {
+    font-size: 22px;
 }
+
 th {
     font-weight: normal;
     color: #039;
     padding: 10px 15px;
-    text-align:center;
+    text-align: center;
 }
 
 td {
@@ -184,10 +188,11 @@ td {
     border-top: 1px solid #e8edff;
     padding: 10px 15px;
 }
-td input{
-    border:none;
-    text-align:center;
-}
+
+    td input {
+        border: none;
+        text-align: center;
+    }
 
 tr:hover td {
     background: #e8edff;

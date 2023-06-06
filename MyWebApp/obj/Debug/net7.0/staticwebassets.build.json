@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Mdbc5T8W5LTrHI3N3Y3ckOCx7Pd84kicQyp7GEAtoQg=",
+  "Hash": "zK1xJGn64ychP1w76zH0GmIAbcnoAXR+hyzHFlRHLps=",
   "Source": "MyWebApp",
   "BasePath": "_content/MyWebApp",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\image\\main_bg.png",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "image/main_bg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\main_bg.png"
+    },
+    {
+      "Identity": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\image\\main.png",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "image/main.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\main.png"
     },
     {
       "Identity": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\js\\site.js",
@@ -1069,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\prod.json",
+      "SourceId": "MyWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\",
+      "BasePath": "_content/MyWebApp",
+      "RelativePath": "prod.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\prod.json"
     }
   ]
 }

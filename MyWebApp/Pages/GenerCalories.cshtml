@@ -24,34 +24,9 @@
     <button onclick="addInput()">Далее</button>
 </div>
 
-
 <script>
-    var data = JSON.parse(localStorage.getItem('listValues'));
+    import myJson from '~/other/prod.json' assert {type: 'json'};
+    var data = JSON.parse(localStorage.getItem('listValues'));//получили данные с предыдущей страницы
+    var table = document.getElementById("myTable");//получили ссылку на таблицу где будет выводится
 
-    const table = document.getElementById('myTable');
-    const tbody = table.querySelector('tbody');
-
-    Object.entries(data).forEach((entry) => {
-        // создаем строку таблицы
-        const [key, value] = entry;
-        const row = document.createElement('tr');
-
-        // создаем ячейки и добавляем текст внутрь
-        const nameCell = document.createElement('td');
-        nameCell.textContent = value;
-        const quantityCell = document.createElement('td');
-
-        // создаем input и добавляем значение 300
-        const quantityInput = document.createElement('input');
-        quantityInput.type = 'number';
-        quantityInput.value = 300;
-
-        // добавляем input в ячейку и ячейки в строку
-        quantityCell.appendChild(quantityInput);
-        row.appendChild(nameCell);
-        row.appendChild(quantityCell);
-
-        // добавляем строку в таблицу
-        tbody.appendChild(row);
-    });
 </script>

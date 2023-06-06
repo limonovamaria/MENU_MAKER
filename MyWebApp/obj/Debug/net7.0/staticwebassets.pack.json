@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\image\\main.png",
+      "PackagePath": "staticwebassets\\image\\main.png"
+    },
+    {
+      "Id": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\image\\main_bg.png",
+      "PackagePath": "staticwebassets\\image\\main_bg.png"
+    },
+    {
       "Id": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -243,6 +251,10 @@
     {
       "Id": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Satan\\Desktop\\GIT\\MENU_MAKER\\MyWebApp\\wwwroot\\prod.json",
+      "PackagePath": "staticwebassets\\prod.json"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MyWebApp.Microsoft.AspNetCore.StaticWebAssets.props",

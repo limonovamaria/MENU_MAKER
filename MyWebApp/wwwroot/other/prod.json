@@ -1,0 +1,287 @@
+[
+  {
+    "name": [
+      {
+        "nameFood": "Овсяные хлопья",
+        "weight": "100",
+        "calories": "366"
+      },
+      {
+        "nameFood": "Овсянка",
+        "weight": "100",
+        "calories": "389"
+      },
+      {
+        "nameFood": "Пшенка",
+        "weight": "100",
+        "calories": "334"
+      },
+      {
+        "nameFood": "Гречка",
+        "weight": "100",
+        "calories": "346"
+      },
+      {
+        "nameFood": "Рис",
+        "weight": "100",
+        "calories": "360"
+      },
+      {
+        "nameFood": "Манка",
+        "weight": "100",
+        "calories": "328"
+      },
+      {
+        "nameFood": "Перловка",
+        "weight": "100",
+        "calories": "352"
+      },
+      {
+        "nameFood": "Геркулес",
+        "weight": "100",
+        "calories": "352"
+      }
+    ],
+    "type": "Крупы"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Яблоко",
+        "weight": "100",
+        "calories": "52"
+      },
+      {
+        "nameFood": "Банан",
+        "weight": "100",
+        "calories": "96"
+      },
+      {
+        "nameFood": "Апельсин",
+        "weight": "100",
+        "calories": "43"
+      },
+      {
+        "nameFood": "Груша",
+        "weight": "100",
+        "calories": "47"
+      },
+      {
+        "nameFood": "Киви",
+        "weight": "100",
+        "calories": "47"
+      },
+      {
+        "nameFood": "Мандарин",
+        "weight": "100",
+        "calories": "38"
+      }
+    ],
+    "type": "Фрукты"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Помидор",
+        "weight": "100",
+        "calories": "18"
+      },
+      {
+        "nameFood": "Огурец",
+        "weight": "100",
+        "calories": "15"
+      },
+      {
+        "nameFood": "Лук репчатый",
+        "weight": "100",
+        "calories": "41"
+      },
+      {
+        "nameFood": "Перец болгарский",
+        "weight": "100",
+        "calories": "26"
+      },
+      {
+        "nameFood": "Морковь",
+        "weight": "100",
+        "calories": "35"
+      },
+      {
+        "nameFood": "Капуста",
+        "weight": "100",
+        "calories": "25"
+      },
+      {
+        "nameFood": "Кабачок",
+        "weight": "100",
+        "calories": "24"
+      },
+      {
+        "nameFood": "Цветная капуста",
+        "weight": "100",
+        "calories": "30"
+      },
+      {
+        "nameFood": "Чеснок",
+        "weight": "100",
+        "calories": "149"
+      },
+      {
+        "nameFood": "Свекла",
+        "weight": "100",
+        "calories": "43"
+      }
+    ],
+    "type": "Овощи"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Грецкий орех",
+        "weight": "100",
+        "calories": "654"
+      },
+      {
+        "nameFood": "Фундук",
+        "weight": "100",
+        "calories": "704"
+      },
+      {
+        "nameFood": "Кешью",
+        "weight": "100",
+        "calories": "600"
+      },
+      {
+        "nameFood": "Арахис",
+        "weight": "100",
+        "calories": "552"
+      },
+      {
+        "nameFood": "Фисташки",
+        "weight": "100",
+        "calories": "556"
+      },
+      {
+        "nameFood": "Миндаль",
+        "weight": "100",
+        "calories": "645"
+      }
+    ],
+    "type": "Орехи"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Хлеб пшеничный",
+        "weight": "100",
+        "calories": "242"
+      },
+      {
+        "nameFood": "Хлеб ржаной",
+        "weight": "100",
+        "calories": "259"
+      },
+      {
+        "nameFood": "Хлеб гречневый",
+        "weight": "100",
+        "calories": "228"
+      },
+      {
+        "calories": "267",
+        "nameFood": "Хлеб зерновой",
+        "weight": "100"
+      },
+      {
+        "nameFood": "Хлеб отрубной",
+        "weight": "100",
+        "calories": "227"
+      },
+      {
+        "nameFood": "Хлеб бездрожжевой",
+        "weight": "100",
+        "calories": "178"
+      }
+    ],
+    "type": "Хлеб и хлебцы"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Картофель",
+        "weight": "100",
+        "calories": "77"
+      },
+      {
+        "calories": "330",
+        "nameFood": "Макароны",
+        "weight": "100"
+      },
+      {
+        "nameFood": "Булгур",
+        "weight": "100",
+        "calories": "342"
+      },
+      {
+        "nameFood": "Горох",
+        "weight": "100",
+        "calories": "60"
+      }
+    ],
+    "type": "Гарниры"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Курица",
+        "weight": "100",
+        "calories": "170"
+      },
+      {
+        "nameFood": "Рыба",
+        "weight": "100",
+        "calories": "242"
+      },
+      {
+        "nameFood": "Говядина",
+        "weight": "100",
+        "calories": "187"
+      },
+      {
+        "nameFood": "Свинина",
+        "weight": "100",
+        "calories": "259"
+      },
+      {
+        "nameFood": "Баранина",
+        "weight": "100",
+        "calories": "209"
+      }
+    ],
+    "type": "Мясо или рыба"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Творог",
+        "weight": "100",
+        "calories": "103"
+      },
+      {
+        "nameFood": "Йогурт",
+        "weight": "100",
+        "calories": "80"
+      },
+      {
+        "nameFood": "Кефир",
+        "weight": "100",
+        "calories": "50"
+      },
+      {
+        "nameFood": "Ряженка",
+        "weight": "100",
+        "calories": "50"
+      }
+    ],
+    "type": "Молочные продукты"
+  }
+]
