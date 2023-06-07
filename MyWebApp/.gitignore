@@ -473,9 +473,14 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+#Pages/
+
+./**/GenerCalories.cshtml
+
 # Windows shortcuts
 *.lnk
-
-.vs/
-bin/
+/bin/*
+**/.vs/
 obj/
+bin/
+

@@ -4,13 +4,13 @@
     ViewData["Title"] = "Генератор";
 }
 
-<h1 style="text-align:center">Укажите количество грамм каждого продукта</h1>
+<h1 style="text-align:center">Укажите максимальное количество грамм каждого продукта</h1>
 <div class="gener_calor">
     <table id="myTable">
         <thead>
             <tr>
                 <th>Название продукта</th>
-                <th>Количество грамм</th>
+                <th>Максимальное количество грамм</th>
             </tr>
         </thead>
         <tbody>
@@ -25,7 +25,6 @@
 </div>
 
 <script>
-    import myJson from '~/other/prod.json' assert {type: 'json'};
     var data = JSON.parse(localStorage.getItem('listValues'));//получили данные с предыдущей страницы
     var table = document.getElementById("myTable");//получили ссылку на таблицу где будет выводится
 

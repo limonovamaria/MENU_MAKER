@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'neucha';
+    src: url('../fonts/neucha.ttf') format('truetype');
+}
+
 html {
     font-size: 14px;
+    
 }
 
 @media (min-width: 768px) {
@@ -21,6 +27,7 @@ body {
     margin-bottom: 60px;
     background-image: url('../image/main_bg.png');
     background-size: cover;
+    font-family: neucha;
 }
 
 .buttons_reg_auto {
@@ -97,16 +104,16 @@ body {
     .Ref_select div {
         margin: 10px;
     }
-
-.Refreg_menu_sec {
-    display: flex;
+.Refreg_menu{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
 }
-
-    .Refreg_menu_sec div:nth-child(2) {
-        flex-direction: column;
-        padding-left: 25px;
-    }
-
+.Refreg_menu_first {
+    display: flex;
+    flex-direction: column;
+    margin-right:150px;
+}
 
 
 .dropdown-checkbox {

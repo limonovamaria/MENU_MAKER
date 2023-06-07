@@ -2,12 +2,13 @@
 @model MyWebApp.Pages.RefregModel
 @{
 }
+
 <h1 style="text-align:center">Добавьте продукты, которые есть у вас в холодильнике</h1>
 <h4 style="text-align:center">Выберите из предложенных продуктов (желательно хотя бы по одному продукту из каждой категории)</h4>
 <h6 style="text-align:center">Наведите на категорию</h6>
 <div class="Refreg_menu">
     <div class="Refreg_menu_first">
-        <div class="Ref_select">
+
             <div class="dropdown-checkbox form-group">
                 <h4 class="label_title">Крупы</h4>
                 <ul>
@@ -186,6 +187,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="dropdown-checkbox form-group">
                 <h4 class="label_title">Хлеб и хлебцы</h4>
                 <ul>
@@ -304,23 +306,14 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        
         <button type="button" onclick="addToDoList()" class="but_add_prod">Добавить в холодильник</button>
-
     </div>
-    <hr />
-    <h4>Добавьте свои продукты</h4>
-    <hr />
     <div class="Refreg_menu_sec">
-        <div>
-            <h4>Название продукта</h4>
-            <input id="addProduct" type="text" />
-            <button type="button" onclick="addProdToDoList()">Добавить</button>
-        </div>
         <div>
             <h4>Мой холодильник</h4>
             <div class="Refreg_menu_second">
-                <select id="to-do-list" size="5" style="width:200px; height:300px">
+                <select id="to-do-list" size="5" style="width:200px; height:455px">
                 </select>
             </div>
             <button onclick="removeAll()">Удалить содержимое холодильника</button>
@@ -363,19 +356,16 @@
     function addToListNext() {
         // Получаем список
         const list = document.getElementById('to-do-list');
-
         // Получаем элементы списка
         const items = list.querySelectorAll('option');
-
         // Создаем массив со значениями элементов списка
         const values = [];
         for (let i = 0; i < items.length; i++) {
             values.push(items[i].innerText);
-
         }
 
-        // Сохраняем массив в localStorage
-        localStorage.setItem('listValues', JSON.stringify(values));
+        //// Сохраняем массив в localStorage
+        //localStorage.setItem('listValues', JSON.stringify(values));
     }
 
 </script>
