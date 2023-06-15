@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Генератор";
 }
-<script src="~/other/prod.json"></script>
+
 <h1 style="text-align:center">Укажите максимальное количество грамм каждого продукта</h1>
 <div class="gener_calor">
     <table id="myTable">
@@ -65,7 +65,7 @@
             const obj = { name, weight };
             data2.push(obj);
         });
-        localStorage.setItem('listValues', JSON.stringify(data2));
+        localStorage.setItem('prodValues', JSON.stringify(data2));
 
 
     }

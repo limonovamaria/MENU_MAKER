@@ -10,4 +10,15 @@
     <None Include="wwwroot\image\main.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\other\prod.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\other\products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
 </Project>

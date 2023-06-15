@@ -3,21 +3,93 @@
 @{
     ViewData["Title"] = "Сгенерированное меню";
 }
+<script src="~/other/products.json"></script>
 <h1 style="text-align:center">Сгенерированное меню</h1>
+<div class="gener_calor">
+    <h3 style="text-align:center">Вычисленная калорийность от граммовки</h3>
+    <table id="foodTable">
+        <thead>
+            <tr>
+                <th>Название продукта</th>
+                <th>Количество грамм</th>
+                <th>Калорийность</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
 <script>
-    ////1. Подключаемся к локальному серверу веб-приложения
-    //var url = 'http://localhost:5175/other/prod.json';
-    ////2. Загружаем JSON-файл с помощью AJAX-запроса
-    //var xhr = new XMLHttpRequest();
-    //xhr.open('GET', url, true);
-    //xhr.onload = function () {
-    //    if (xhr.status === 200) {
-    //        //3. Обрабатываем данные из JSON-файла и выводим в консоль
-    //        var data = JSON.parse(xhr.responseText);
-    //        console.log(data);
-    //    } else {
-    //        console.log('Ошибка загрузки данных: ' + xhr.statusText);
-    //    }
-    //};
-    //xhr.send();
+    //1. Подключаемся к локальному серверу веб-приложения
+    var url = 'http://localhost:5175/other/products.json';
+    //2. Загружаем JSON-файл с помощью AJAX-запроса
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            //3. Обрабатываем данные из JSON-файла и запихиваем в localstorage
+            var data = JSON.parse(xhr.responseText);
+            localStorage.setItem('JSONValues', JSON.stringify(data));
+        } else {
+            console.log('Ошибка загрузки данных: ' + xhr.statusText);
+        }
+    };
+    xhr.send();
+    // получаем данные из первого хранилища
+    var storage1 = localStorage.getItem("prodValues");
+    var data1 = JSON.parse(storage1);
+
+    // получаем данные из второго хранилища
+    var storage2 = localStorage.getItem("JSONValues");
+    var data2 = JSON.parse(storage2);
+
+    // создаем новый массив для хранения результатов
+    var result = [];
+
+    // проходим по элементам первого хранилища
+    for (var i = 0; i < data1.length; i++) {
+
+        // ищем элемент второго хранилища по name
+        var found = false;
+        for (var j = 0; j < data2.length; j++) {
+            if (data2[j].name == data1[i].name) {
+                found = true;
+                break;
+            }
+        }
+
+        // если элемент найден, то вычисляем новые значения
+        if (found) {
+            var calories = parseInt(data2[j].calories) / 100;
+            var weight = parseInt(data1[i].weight);
+            var totalCalories = calories * weight;
+
+            // добавляем новый элемент в результат
+            result.push({
+                name: data1[i].name,
+                weight: data1[i].weight,
+                calories: totalCalories.toString()
+            });
+        }
+    }
+
+    // сохраняем результаты в новое хранилище
+    localStorage.setItem("result", JSON.stringify(result));
+
+    let foodData = JSON.parse(localStorage.getItem('result'));
+    let table = document.getElementById('foodTable');
+    let tbody = table.getElementsByTagName('tbody')[0];
+    for (let i = 0; i < foodData.length; i++) {
+        let row = document.createElement('tr');
+        let nameCell = document.createElement('td');
+        let weightCell = document.createElement('td');
+        let calCell = document.createElement('td');
+        nameCell.textContent = foodData[i].name;
+        weightCell.textContent = foodData[i].weight;
+        calCell.textContent = foodData[i].calories;
+        row.appendChild(nameCell);
+        row.appendChild(weightCell);
+        row.appendChild(calCell);
+        tbody.appendChild(row);
+    }
 </script>
