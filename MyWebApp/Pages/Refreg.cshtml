@@ -1,6 +1,7 @@
 ﻿@page
 @model MyWebApp.Pages.RefregModel
 @{
+    ViewData["Title"] = "Мой холодильник";
 }
 
 <h1 style="text-align:center">Добавьте продукты, которые есть у вас в холодильнике</h1>
@@ -364,8 +365,8 @@
             values.push(items[i].innerText);
         }
 
-        //// Сохраняем массив в localStorage
-        //localStorage.setItem('listValues', JSON.stringify(values));
+        // Сохраняем массив в localStorage
+        localStorage.setItem('listValues', JSON.stringify(values));
     }
 
 </script>

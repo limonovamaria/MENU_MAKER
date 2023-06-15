@@ -21,11 +21,56 @@
     <form action="Refreg">
         <button>Назад</button>
     </form>
-    <button onclick="addInput()">Далее</button>
+    <button onclick="newListProd()">Далее</button>
 </div>
 
 <script>
     var data = JSON.parse(localStorage.getItem('listValues'));//получили данные с предыдущей страницы
     var table = document.getElementById("myTable");//получили ссылку на таблицу где будет выводится
+    const tbody = table.querySelector('tbody');
 
+    Object.entries(data).forEach((entry) => {
+        // создаем строку таблицы
+        const [key, value] = entry;
+        const row = document.createElement('tr');
+
+        // создаем ячейки и добавляем текст внутрь
+        const nameCell = document.createElement('td');
+        nameCell.textContent = value;
+        const quantityCell = document.createElement('td');
+
+        // создаем input и добавляем значение 300
+        const quantityInput = document.createElement('input');
+        quantityInput.type = 'number';
+        quantityInput.value = 100;
+
+        // добавляем input в ячейку и ячейки в строку
+        quantityCell.appendChild(quantityInput);
+        row.appendChild(nameCell);
+        row.appendChild(quantityCell);
+
+        // добавляем строку в таблицу
+        tbody.appendChild(row);
+    });
+    function newListProd(){
+            // получаем таблицу
+            const tableProd = document.querySelector('#myTable');
+
+            // получаем все строки таблицы
+            const rows = tableProd.querySelectorAll('tbody tr');
+
+            // создаем пустой объект для хранения данных
+            const dataProd = {};
+
+            // проходимся по каждой строке таблицы и заносим данные в объект
+            rows.forEach(row => {
+                const name = row.querySelector('td:first-child').textContent;
+                const value = row.querySelector('td input').value;
+                dataProd[name] = value;
+            });
+
+            // преобразуем объект в JSON и сохраняем в localStorage
+            localStorage.setItem('prodList', JSON.stringify(dataProd));
+        
+    }
 </script>
