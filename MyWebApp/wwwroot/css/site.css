@@ -5,7 +5,6 @@
 
 html {
     font-size: 14px;
-    
 }
 
 @media (min-width: 768px) {
@@ -25,7 +24,7 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-image: url('../image/main_bg.png');
+    background-image: url('../image/main_bgg.png');
     background-size: cover;
     font-family: neucha;
 }
@@ -76,7 +75,16 @@ body {
             -webkit-transform: translate(0);
             transform: translate(0);
         }
-
+.btn_dalee {
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+.btn_refreg {
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+}
 .FormPage {
     display: flex;
     justify-content: center;
@@ -104,15 +112,17 @@ body {
     .Ref_select div {
         margin: 10px;
     }
-.Refreg_menu{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
+
+.Refreg_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
 .Refreg_menu_first {
     display: flex;
     flex-direction: column;
-    margin-right:150px;
+    margin-right: 150px;
 }
 
 
@@ -204,3 +214,22 @@ td {
 tr:hover td {
     background: #e8edff;
 }
+
+.generator_calories {
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+    .generator_calories table {
+        font-size: 20px;
+        text-align: center;
+    }
+
+        .generator_calories table th {
+            color: black;
+        }
+
+        .generator_calories table td {
+            color: black;
+        }
