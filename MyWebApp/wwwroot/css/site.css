@@ -24,7 +24,7 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-image: url('../image/main_bgg.png');
+    background-image: url('../image/main_back.png');
     background-size: cover;
     font-family: neucha;
 }
@@ -125,6 +125,10 @@ body {
     margin-right: 150px;
 }
 
+.skrugl {
+    border-radius: 15px;
+    text-align: center;
+}
 
 .dropdown-checkbox {
     position: relative;
