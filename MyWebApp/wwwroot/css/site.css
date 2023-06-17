@@ -220,7 +220,7 @@ tr:hover td {
 }
 
 .generator_calories {
-    flex-direction:column;
+    
     justify-content:center;
     align-items:flex-start;
 }
@@ -237,3 +237,12 @@ tr:hover td {
         .generator_calories table td {
             color: black;
         }
+
+.menuGener {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.menuGener h3{
+    text-align:center;
+}

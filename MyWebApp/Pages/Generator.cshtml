@@ -6,18 +6,127 @@
 <script src="~/other/products.json"></script>
 <h1 style="text-align:center">Сгенерированное меню</h1>
 <div class="gener_calor generator_calories">
-    <h3 style="text-align:center">Вычисленная калорийность от граммовки</h3>
-    <table id="foodTable">
-        <thead>
-            <tr>
-                <th>Название продукта</th>
-                <th>Количество грамм</th>
-                <th>Калорийность</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    <div>
+        <h3 style="text-align:center">Вычисленная калорийность от граммовки</h3>
+        <table id="foodTable">
+            <thead>
+                <tr>
+                    <th>Название продукта</th>
+                    <th>Количество грамм</th>
+                    <th>Калорийность</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="menuGener">
+        <div>
+            <h3>Завтрак</h3>
+            <table id="foodTableGen">
+                <thead>
+                    <tr>
+                        <th>Название продукта</th>
+                        <th>Количество грамм</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Пшенка</td>
+                        <td>130</td>
+                    </tr>
+                    <tr>
+                        <td>Банан</td>
+                        <td>109</td>
+                    </tr>
+                    <tr>
+                        <td>Грецкий орех</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб пшеничный</td>
+                        <td>15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>Обед</h3>
+            <table id="foodTableGen">
+                <thead>
+                    <tr>
+                        <th>Название продукта</th>
+                        <th>Количество грамм</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Курица</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Картофель</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>Помидор</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб пшеничный</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>Ужин</h3>
+            <table id="foodTableGen">
+                <thead>
+                    <tr>
+                        <th>Название продукта</th>
+                        <th>Количество грамм</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Творог</td>
+                        <td>134</td>
+                    </tr>
+                    <tr>
+                        <td>Банан</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Грецкий орех</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб пшеничный</td>
+                        <td>11</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>Перекус</h3>
+            <table id="foodTableGen">
+                <thead>
+                    <tr>
+                        <th>Название продукта</th>
+                        <th>Количество грамм</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Грецкий орех</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>Общая калорийность меню на день составляет 1316 ККал</h3>
+    </div>
 </div>
 <script>
     //1. Подключаемся к локальному серверу веб-приложения
@@ -62,7 +171,7 @@
         if (found) {
             var calories = parseInt(data2[j].calories) / 100;
             var weight = parseInt(data1[i].weight);
-            var totalCalories = calories * weight;
+            var totalCalories = Math.trunc(calories * weight);
 
             // добавляем новый элемент в результат
             result.push({
@@ -92,4 +201,5 @@
         row.appendChild(calCell);
         tbody.appendChild(row);
     }
+
 </script>
