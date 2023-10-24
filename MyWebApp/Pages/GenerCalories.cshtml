@@ -21,9 +21,10 @@
     <form action="Refreg">
         <button>Назад</button>
     </form>
-    <form action="Generator">
-        <button onclick="newListProd()">Далее</button>
-    </form>
+@*    <form action="Generator">
+        
+    </form>*@
+    <button onclick="newListProd()">Далее</button>
 </div>
 
 <script>
@@ -55,18 +56,39 @@
         tbody.appendChild(row);
     });
     function newListProd(){
-        const table2 = document.getElementById('myTable');
-        const rows = table2.querySelectorAll('tbody tr');
-        const data2 = [];
+        const url = 'http://localhost:5000/optim';
+        const data = {
+            food_energy_goal: 3000
+        };
 
-        rows.forEach(row => {
-            const name = row.querySelector('td:nth-child(1)').innerText;
-            const weight = row.querySelector('td:nth-child(2) input').value;
-            const obj = { name, weight };
-            data2.push(obj);
-        });
-        localStorage.setItem('prodValues', JSON.stringify(data2));
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Обработка ответа сервера
+                console.log(data);
+            })
+            .catch(error => {
+                // Обработка ошибок
+                console.error('Ошибка:', error);
+            });
 
 
+        //const table2 = document.getElementById('myTable');
+        //const rows = table2.querySelectorAll('tbody tr');
+        //const data2 = [];
+
+        //rows.forEach(row => {
+        //    const name = row.querySelector('td:nth-child(1)').innerText;
+        //    const weight = row.querySelector('td:nth-child(2) input').value;
+        //    const obj = { name, weight };
+        //    data2.push(obj);
+        //});
+        //localStorage.setItem('prodValues', JSON.stringify(data2));
     }
 </script>
