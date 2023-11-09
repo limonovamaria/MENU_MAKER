@@ -1,0 +1,94 @@
+﻿@page
+@model MyWebApp.Hages.GenerCaloriesModel
+@{
+    ViewData["Title"] = "Генератор";
+}
+
+<h1 style="text-align:center">Укажите максимальное количество грамм каждого продукта</h1>
+<div class="gener_calor">
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Название продукта</th>
+                <th>Максимальное количество грамм</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<div class="buttons_reg_auto">
+    <form action="Refreg">
+        <button>Назад</button>
+    </form>
+@*    <form action="Generator">
+        
+    </form>*@
+    <button onclick="newListProd()">Далее</button>
+</div>
+
+<script>
+    var data = JSON.parse(localStorage.getItem('listValues'));//получили данные с предыдущей страницы
+    var table = document.getElementById("myTable");//получили ссылку на таблицу где будет выводится
+    const tbody = table.querySelector('tbody');
+
+    Object.entries(data).forEach((entry) => {
+        // создаем строку таблицы
+        const [key, value] = entry;
+        const row = document.createElement('tr');
+
+        // создаем ячейки и добавляем текст внутрь
+        const nameCell = document.createElement('td');
+        nameCell.textContent = value;
+        const quantityCell = document.createElement('td');
+
+        // создаем input и добавляем значение 300
+        const quantityInput = document.createElement('input');
+        quantityInput.type = 'number';
+        quantityInput.value = 100;
+
+        // добавляем input в ячейку и ячейки в строку
+        quantityCell.appendChild(quantityInput);
+        row.appendChild(nameCell);
+        row.appendChild(quantityCell);
+
+        // добавляем строку в таблицу
+        tbody.appendChild(row);
+    });
+    function newListProd(){
+        const url = 'http://localhost:5000/optim';
+        const data = {
+            food_energy_goal: 3000
+        };
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Обработка ответа сервера
+                console.log(data);
+            })
+            .catch(error => {
+                // Обработка ошибок
+                console.error('Ошибка:', error);
+            });
+
+
+        //const table2 = document.getElementById('myTable');
+        //const rows = table2.querySelectorAll('tbody tr');
+        //const data2 = [];
+
+        //rows.forEach(row => {
+        //    const name = row.querySelector('td:nth-child(1)').innerText;
+        //    const weight = row.querySelector('td:nth-child(2) input').value;
+        //    const obj = { name, weight };
+        //    data2.push(obj);
+        //});
+        //localStorage.setItem('prodValues', JSON.stringify(data2));
+    }
+</script>

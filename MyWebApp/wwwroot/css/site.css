@@ -1,3 +1,252 @@
+
+@font-face {
+    font-family: 'neucha';
+    src: url('../fonts/neucha.ttf') format('truetype');
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('../image/main_back.png');
+    background-size: cover;
+    font-family: neucha;
+}
+
+.buttons_reg_auto {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .buttons_reg_auto button {
+        padding: 20px 40px;
+        margin: 50px;
+        background: none;
+        border: none;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+        cursor: pointer;
+    }
+
+        .buttons_reg_auto button:after, .buttons_reg_auto button:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border: 2px solid #000;
+            transition: -webkit-transform 0.2s;
+            transition: transform 0.2s;
+            transition: transform 0.2s, -webkit-transform 0.2s;
+        }
+
+        .buttons_reg_auto button:after {
+            -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
+        }
+
+        .buttons_reg_auto button:before {
+            -webkit-transform: translate(-3px, -3px);
+            transform: translate(-3px, -3px);
+        }
+
+        .buttons_reg_auto button:hover:after, .buttons_reg_auto button:hover:before {
+            -webkit-transform: translate(0);
+            transform: translate(0);
+        }
+.btn_dalee {
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+.btn_refreg {
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+}
+.FormPage {
+    display: flex;
+    justify-content: center;
+}
+
+    .FormPage .first_column_form {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .FormPage .second_column_form {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .FormPage button {
+        margin: 40px;
+    }
+
+.Ref_select {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .Ref_select div {
+        margin: 10px;
+    }
+
+.Refreg_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Refreg_menu_first {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+}
+
+.skrugl {
+    border-radius: 15px;
+    text-align: center;
+}
+
+.dropdown-checkbox {
+    position: relative;
+    display: inline-block;
+    border: solid;
+    padding: 10px;
+}
+
+    .dropdown-checkbox:hover {
+        background-color: bisque;
+    }
+
+    .dropdown-checkbox .label-title {
+        font-size: 13px;
+    }
+
+    .dropdown-checkbox ul {
+        position: absolute;
+        background: white;
+        list-style: none;
+        min-width: 180px;
+        margin: 0px;
+        padding: 0px;
+        left: 0px;
+        display: none;
+        z-index: 1;
+        border: 1px solid #9c9c9c;
+    }
+
+        .dropdown-checkbox ul li {
+            font-size: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #a5a5a5;
+            margin: 0px;
+        }
+
+            .dropdown-checkbox ul li input {
+                margin-right: 10px;
+            }
+
+    .dropdown-checkbox:hover ul {
+        display: block;
+    }
+
+.foot_refreg button:nth-child(2) {
+    float: right;
+}
+
+
+.gener_col_first {
+    display: flex;
+    flex-direction: column;
+}
+
+.gener_col_sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.gener_calor {
+    display: flex;
+    justify-content: center;
+}
+
+#myTable {
+    font-size: 22px;
+}
+
+th {
+    font-weight: normal;
+    color: #039;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+td {
+    color: #669;
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+}
+
+    td input {
+        border: none;
+        text-align: center;
+    }
+
+tr:hover td {
+    background: #e8edff;
+}
+
+.generator_calories {
+    
+    justify-content:center;
+    align-items:flex-start;
+}
+
+    .generator_calories table {
+        font-size: 20px;
+        text-align: center;
+    }
+
+        .generator_calories table th {
+            color: black;
+        }
+
+        .generator_calories table td {
+            color: black;
+        }
+
+.menuGener {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.menuGener h3{
+    text-align:center;
+
 html {
   font-size: 14px;
 }
@@ -22,4 +271,5 @@ body {
 }
 .inq{
     background-color:red;
+
 }
