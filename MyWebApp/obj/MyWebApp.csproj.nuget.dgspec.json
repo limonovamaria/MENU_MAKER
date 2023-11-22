@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\MyWebApp.csproj": {}
+    "D:\\Репозитории GitHub\\MENU_MAKER\\MyWebApp\\MyWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\MyWebApp.csproj": {
+    "D:\\Репозитории GitHub\\MENU_MAKER\\MyWebApp\\MyWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\MyWebApp.csproj",
+        "projectUniqueName": "D:\\Репозитории GitHub\\MENU_MAKER\\MyWebApp\\MyWebApp.csproj",
         "projectName": "MyWebApp",
-        "projectPath": "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\MyWebApp.csproj",
+        "projectPath": "D:\\Репозитории GitHub\\MENU_MAKER\\MyWebApp\\MyWebApp.csproj",
         "packagesPath": "C:\\Users\\Marus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marus\\OneDrive\\Рабочий стол\\Ne Tikai\\UIR\\NEWMENU\\MyWebApp\\obj\\",
+        "outputPath": "D:\\Репозитории GitHub\\MENU_MAKER\\MyWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marus\\AppData\\Roaming\\NuGet\\NuGet.Config",
