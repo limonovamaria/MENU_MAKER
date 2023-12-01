@@ -1,0 +1,83 @@
+﻿@page
+@model MyWebApp.Pages.FormModel
+@{
+    ViewData["Title"] = "Генератор";
+}
+
+<h1 style="text-align:center">Заполните анкету</h1>
+<form action="Refreg">
+    <div class="FormPage">
+        <div class="first_column_form" required>
+            <div>
+                <h4>Укажите пол</h4>
+                <p><input type="radio" name="sex" required> Мужской</p>
+                <p><input type="radio" name="sex" required> Женский</p>
+            </div>
+            <div>
+                <h4>Укажите возраст</h4>
+                <input id="date" class="skrugl" maxlength="2" required type="text" pattern="[0-9]*">
+            </div>
+            <div>
+                <h4>Укажите рост</h4>
+                <input class="high skrugl" value="170" required />
+            </div>
+            <div>
+                <h4>Укажите вес</h4>
+                <input class="weight skrugl" value="60" required />
+            </div>
+
+        </div>
+        <div class="second_column_form">
+            <div>
+                <h4>Укажите уровень активности</h4>
+                <select size="3">
+                    <option>Низкий</option>
+                    <option selected>Средний</option>
+                    <option>Высокий</option>
+                </select>
+            </div>
+            <div>
+                <h4>Выберите режим</h4>
+                <select size="3">
+                    <option>Сброс веса</option>
+                    <option selected>Поддержание веса</option>
+                    <option>Набор мышечной массы</option>
+                </select>
+            </div>
+        </div>
+        <div class="second_column_form">
+            <div>
+                <div>
+                    <h4>Общая целевая калорийность</h4>
+                    <input id="celCal" class="skrugl" required type="number" pattern="[0-9]*" value="" oninput="change()">
+                </div>
+                <div>
+                    <h4>Завтрак</h4>
+                    <input id="breakfast" class="skrugl" value="" disabled />
+                </div>
+                <div>
+                    <h4>Обед</h4>
+                    <input id="lunch" class="skrugl" value="" disabled />
+                </div>
+                <div>
+                    <h4>Перекус</h4>
+                    <input id="snack" class="skrugl" value="" disabled />
+                </div>
+                <div>
+                    <h4>Ужин</h4>
+                    <input id="dinner" class="skrugl" value="" disabled />
+                </div>
+            </div>
+            <button class="btn_after_form btn_dalee">Далее</button>
+        </div>
+    </div>
+</form>
+<script>
+    function change(){
+        var temp = document.getElementById("celCal").value;
+        document.getElementById("breakfast").value = Math.ceil(temp * 0.25);
+        document.getElementById("lunch").value = Math.ceil(temp * 0.45);
+        document.getElementById("snack").value = Math.ceil(temp * 0.10);
+        document.getElementById("dinner").value = Math.ceil(temp * 0.20);
+    }
+</script>

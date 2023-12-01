@@ -1,0 +1,239 @@
+[
+  {
+    "name": [
+      {
+        "nameFood": "Овсяные хлопья",
+        "calories": "366"
+      },
+      {
+        "nameFood": "Овсянка",
+        "calories": "389"
+      },
+      {
+        "nameFood": "Пшенка",
+        "calories": "334"
+      },
+      {
+        "nameFood": "Гречка",
+        "calories": "346"
+      },
+      {
+        "nameFood": "Рис",
+        "calories": "360"
+      },
+      {
+        "nameFood": "Манка",
+        "calories": "328"
+      },
+      {
+        "nameFood": "Перловка",
+        "calories": "352"
+      },
+      {
+        "nameFood": "Геркулес",
+        "calories": "352"
+      }
+    ],
+    "type": "Крупы"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Яблоко",
+        "calories": "52"
+      },
+      {
+        "nameFood": "Банан",
+        "calories": "96"
+      },
+      {
+        "nameFood": "Апельсин",
+        "calories": "43"
+      },
+      {
+        "nameFood": "Груша",
+        "calories": "47"
+      },
+      {
+        "nameFood": "Киви",
+        "calories": "47"
+      },
+      {
+        "nameFood": "Мандарин",
+        "calories": "38"
+      }
+    ],
+    "type": "Фрукты"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Помидор",
+        "calories": "18"
+      },
+      {
+        "nameFood": "Огурец",
+        "calories": "15"
+      },
+      {
+        "nameFood": "Лук репчатый",
+        "calories": "41"
+      },
+      {
+        "nameFood": "Перец болгарский",
+        "calories": "26"
+      },
+      {
+        "nameFood": "Морковь",
+        "calories": "35"
+      },
+      {
+        "nameFood": "Капуста",
+        "calories": "25"
+      },
+      {
+        "nameFood": "Кабачок",
+        "calories": "24"
+      },
+      {
+        "nameFood": "Цветная капуста",
+        "calories": "30"
+      },
+      {
+        "nameFood": "Чеснок",
+        "calories": "149"
+      },
+      {
+        "nameFood": "Свекла",
+        "calories": "43"
+      }
+    ],
+    "type": "Овощи"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Грецкий орех",
+        "calories": "654"
+      },
+      {
+        "nameFood": "Фундук",
+        "calories": "704"
+      },
+      {
+        "nameFood": "Кешью",
+        "calories": "600"
+      },
+      {
+        "nameFood": "Арахис",
+        "calories": "552"
+      },
+      {
+        "nameFood": "Фисташки",
+        "calories": "556"
+      },
+      {
+        "nameFood": "Миндаль",
+        "calories": "645"
+      }
+    ],
+    "type": "Орехи"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Хлеб пшеничный",
+        "calories": "242"
+      },
+      {
+        "nameFood": "Хлеб ржаной",
+        "calories": "259"
+      },
+      {
+        "nameFood": "Хлеб гречневый",
+        "calories": "228"
+      },
+      {
+        "nameFood": "Хлеб зерновой", 
+        "calories": "267"
+
+      },
+      {
+        "nameFood": "Хлеб отрубной",
+        "calories": "227"
+      },
+      {
+        "nameFood": "Хлеб бездрожжевой",
+        "calories": "178"
+      }
+    ],
+    "type": "Хлеб и хлебцы"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Картофель",
+        "calories": "77"
+      },
+      {
+        "nameFood": "Макароны",
+        "calories": "330"
+      },
+      {
+        "nameFood": "Булгур",
+        "calories": "342"
+      },
+      {
+        "nameFood": "Горох",
+        "calories": "60"
+      }
+    ],
+    "type": "Гарниры"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Курица",
+        "calories": "170"
+      },
+      {
+        "nameFood": "Рыба",
+        "calories": "242"
+      },
+      {
+        "nameFood": "Говядина",
+        "calories": "187"
+      },
+      {
+        "nameFood": "Свинина",
+        "calories": "259"
+      },
+      {
+        "nameFood": "Баранина",
+        "calories": "209"
+      }
+    ],
+    "type": "Мясо или рыба"
+  },
+  {
+    "name": [
+      {
+        "nameFood": "Творог",
+        "calories": "103"
+      },
+      {
+        "nameFood": "Йогурт",
+        "calories": "80"
+      },
+      {
+        "nameFood": "Кефир",
+        "calories": "50"
+      },
+      {
+        "nameFood": "Ряженка",
+        "calories": "50"
+      }
+    ],
+    "type": "Молочные продукты"
+  }
+]
